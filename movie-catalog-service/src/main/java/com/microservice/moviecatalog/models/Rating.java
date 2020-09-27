@@ -1,4 +1,4 @@
-package com.microservice.moviecatalogservice.models;
+package com.microservice.moviecatalog.models;
 
 public class Rating {
 

@@ -1,10 +1,13 @@
-package com.microservice.movieinfoservice.models;
+package com.microservice.moviecatalog.models;
 
 public class Movie {
 
 	private String movieId;
 	private String name;
 	private String description;
+
+	public Movie() {
+	}
 
 	public Movie(String movieId, String name, String description) {
 		this.movieId = movieId;
@@ -34,6 +37,11 @@ public class Movie {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "Movie [movieId=" + movieId + ", name=" + name + ", description=" + description + "]";
 	}
 
 }
